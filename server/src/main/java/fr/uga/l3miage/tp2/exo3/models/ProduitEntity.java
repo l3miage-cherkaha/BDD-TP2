@@ -14,7 +14,6 @@ import javax.persistence.OneToMany;
 
     @ManyToOne
     private CommandeEntity commande;
-
     @ManyToOne
     private CatégorieDeProduitEntity categories;
 }
