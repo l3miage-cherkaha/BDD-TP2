@@ -9,9 +9,12 @@ import java.util.Set;
 @Table(name="projet")
 public class ProjectEntity {
     @Id
+    @Column
     private  Integer Id;
+    @Column
     private String name;
+    @Column
     private String description;
-    @ManyToMany(mappedBy = "projets")
+    @ManyToMany(mappedBy = "project")
     private Set<DeveloperMiage> developpers;
 }

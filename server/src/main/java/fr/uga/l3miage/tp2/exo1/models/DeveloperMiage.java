@@ -7,10 +7,12 @@ import java.util.Set;
 @Table(name="developer_miage")
 public class DeveloperMiage {
     @Id
+    @Column
     private String lastname;
+    @Column
     private String firstname;
+    @Column
     private String email;
-
     @ManyToMany
-    private Set<ProjectEntity> projets;
+    private Set<ProjectEntity> project;
 }
