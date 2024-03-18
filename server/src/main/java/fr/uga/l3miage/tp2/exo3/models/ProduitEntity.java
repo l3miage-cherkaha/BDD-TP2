@@ -11,9 +11,6 @@ import javax.persistence.OneToMany;
     private String nom;
     private Double prix;
     private Integer quantite;
-
-    @ManyToOne
-    private CommandeEntity commande;
     @ManyToOne
     private CatégorieDeProduitEntity categories;
 }
