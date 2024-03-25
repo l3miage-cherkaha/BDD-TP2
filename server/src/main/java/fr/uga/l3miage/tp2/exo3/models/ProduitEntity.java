@@ -5,7 +5,8 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
-@Entity public class ProduitEntity {
+@Entity
+public class ProduitEntity {
     @Id
     private Long id;
     private String nom;
